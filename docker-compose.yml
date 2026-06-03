@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  # Dịch vụ Cơ sở dữ liệu MongoDB
+  mongodb:
+    image: mongo:latest
+    container_name: recruitment_mongo
+    ports:
+      - "27017:27017" # Mở cổng để Node.js từ máy bạn có thể kết nối vào
+    volumes:
+      - mongo_data:/data/db # Giữ lại dữ liệu không bị mất khi tắt container
+
+  # Dịch vụ Hàng đợi Redis
+  redis:
+    image: redis:alpine
+    container_name: recruitment_redis
+    ports:
+      - "6379:6379" # Mở cổng cho BullMQ kết nối vào
+
+volumes:
+  mongo_data:

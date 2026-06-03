@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "bullmq": "^5.78.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ioredis": "^5.11.0",
+    "mongoose": "^9.6.3",
+    "nodemailer": "^8.0.10"
+  },
+  "name": "project-thuc-tap",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/server.js", 
+    "scripts": {
+      "start": "node src/server.js",
+      "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqhuy0604/Enterprise-Job-Recruitment-Notification-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dqhuy0604/Enterprise-Job-Recruitment-Notification-System/issues"
+  },
+  "homepage": "https://github.com/dqhuy0604/Enterprise-Job-Recruitment-Notification-System#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
