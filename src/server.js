@@ -1,6 +1,7 @@
 require('dotenv').config(); // Nạp biến môi trường từ file .env đầu tiên
 const app = require('./app');
 const connectDB = require('./config/database');
+require('./modules/notifications/email.worker');
 
 const PORT = process.env.PORT || 5000;
 
